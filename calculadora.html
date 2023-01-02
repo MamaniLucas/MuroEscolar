@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mi calculadora</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="calculadora">
+		<form action="">
+			<input type="text" class="display">
+		</form>
+		<table>
+			<tr>
+				<td><input type="button" value="C" onclick="c()"></td>
+				<td><input type="button" value="/" onclick="insertar('/')"></td>
+				<td><input type="button" value="<" onclick="del()"></td>
+				<td><input type="button" value="x" onclick="insertar('*')"></td>
+
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="insertar(7)"></td>
+				<td><input type="button" value="8" onclick="insertar(8)"></td>
+				<td><input type="button" value="9" onclick="insertar(9)"></td>
+				<td><input type="button" value="-" onclick="insertar('-')"></td>
+
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="insertar(4)"></td>
+				<td><input type="button" value="5" onclick="insertar(5)"></td>
+				<td><input type="button" value="6" onclick="insertar(6)"></td>
+				<td><input type="button" value="+" onclick="insertar('+')"></td>
+
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="insertar(1)"></td>
+				<td><input type="button" value="2" onclick="insertar(2)"></td>
+				<td><input type="button" value="3" onclick="insertar(3)"></td>
+				<td rowspan="2"><input style= "height: 158px; background-color: orange;" type="button" value="=" onclick="igual()"></td>
+
+			</tr>
+			<tr>
+				<td colspan="2"><input style="width:158px;" type="button" value="0" onclick="insertar(0)"></td>
+				<td><input type="button" value="." onclick="insertar('.')"></td>
+			</tr>
+		</table>
+	</div>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/2-1-script.js"></script>
+	
+</body>
+</html>

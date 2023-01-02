@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/promedio.css">
+<head>
+	<meta charset="utf-8">
+	<title>NOTAS</title>
+</head>
+
+<body align="center">
+    <br>
+    <script type="text/javascript">
+    function contenido (id){
+        return document.getElementById(id);
+    }
+    function calcularProme(){
+        var pn = parseInt(contenido('1nota').value);
+        var sn = parseInt(contenido('2nota').value);
+        var tn = parseInt(contenido('3nota').value);
+        var cn = parseInt(contenido('4nota').value);
+        var total = (sn+pn+tn+cn)/4;
+        contenido('prom').value=total;
+
+        if(total >=21 & total<=10000000) {
+            contenido('EQ').value = 'ERROR';
+        }
+
+        else if (total >=13 & total <= 20){
+            contenido ('EQ').value = 'Aprobado';
+        }
+         else if (total >=0 & total <= 12){
+            contenido ('EQ').value = 'Desaprobado';
+        }
+    }
+</script>
+<div>
+<h1 align="center">DATOS</h1>
+<p align="center">
+    <label for="name">Nombre completo:</label>
+    <input type="text" name="name" id="name"><br><br>
+<input type="number" id="1nota" class="subcont" placeholder="Primera nota"/>
+<input type="number" id="2nota" class="subcont" placeholder="Segunda nota"/><br><br>
+<input type="number" id="3nota" class="subcont" placeholder="Tercera nota"/>
+<input type="number" id="4nota" class="subcont" placeholder="Cuarta nota"/>  
+  <h2 id="ti" align="center">RESULTADO</h2>
+    <input type="text" id="prom" class="subcont" placeholder="Promedio"/>
+    <input type="text" id="EQ" class="subcont" placeholder="EQ"/><br><br> 
+    <button id="boton" onclick="calcularProme()">Calcular</button>
+</div>
+
+</body>
+</html>

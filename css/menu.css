@@ -1,0 +1,61 @@
+body{
+    margin: auto;
+}
+header{
+    height: 150px;
+    background-color: #0000CD;
+    padding: 10px;
+    margin: 0 auto;
+}
+#cuerpo{
+    background-color: #E5E7E9;
+    height: 960px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.head{
+    text-align: center;
+}
+.logo{
+
+    position: absolute;
+    top: 20px;
+    right: 160px;
+}
+
+#menu{
+    background-color: #000000;
+    width: px;
+    margin: 0 auto;
+
+}
+
+ul{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+li{
+    display: inline-block;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 20px  66px;
+    display: block;
+}
+a:hover{
+    background-color: #BDB76B;
+}
+#calculadora{
+    float: right;
+}
+
+#pie{
+    height: 30px;
+    background-color: #999999;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0 auto;
+}
